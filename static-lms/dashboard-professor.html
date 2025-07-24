@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard do Professor - FotoMaster</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FotoMaster - Professor</div>
+      <ul>
+        <li><a href="dashboard-professor.html" class="active">Dashboard</a></li>
+        <li><a href="curso.html">Gerenciar Cursos</a></li>
+        <li><a href="dashboard-aluno.html">Painel do Aluno</a></li>
+        <li><a href="certificado.html">Certificados</a></li>
+        <li><a href="index.html" id="logout-btn">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bem-vindo, Prof. Marcelo</h1>
+
+    <section>
+      <h2>Estatísticas</h2>
+      <ul>
+        <li>Total de alunos ativos: <span id="total-alunos">0</span></li>
+        <li>Taxa de conclusão dos cursos: <span id="taxa-conclusao">0%</span></li>
+        <li>Tempo médio de estudo: <span id="tempo-estudo">0h</span></li>
+        <li>Aulas mais assistidas: <span id="aulas-populares">Nenhuma</span></li>
+        <li>Feedback dos alunos: <span id="feedback-alunos">Nenhum</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gerenciamento de Cursos</h2>
+      <button id="btn-novo-curso">Adicionar Novo Curso</button>
+      <div id="lista-cursos"></div>
+    </section>
+
+    <section>
+      <h2>Gestão de Alunos</h2>
+      <div id="lista-alunos"></div>
+    </section>
+
+    <section>
+      <h2>Certificados</h2>
+      <div id="lista-certificados"></div>
+    </section>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
