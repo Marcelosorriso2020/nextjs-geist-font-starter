@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aula - FotoMaster</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FotoMaster</div>
+      <ul>
+        <li><a href="dashboard-aluno.html">← Voltar ao Dashboard</a></li>
+        <li><span id="user-display"></span></li>
+        <li><a href="index.html" id="logout-btn">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="lesson-container">
+      <div class="lesson-content">
+        <h1 id="lesson-title">Carregando aula...</h1>
+        <p id="lesson-description"></p>
+        
+        <div class="video-container">
+          <iframe id="video-player" 
+                  width="100%" 
+                  height="400" 
+                  frameborder="0" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+        
+        <div class="lesson-controls">
+          <button id="btn-mark-complete" class="btn-primary">Marcar como Concluída</button>
+          <button id="btn-next-lesson" class="btn-secondary" style="display: none;">Próxima Aula</button>
+        </div>
+        
+        <div class="progress-info">
+          <p>Progresso do curso: <span id="course-progress">0%</span></p>
+          <div class="progress-bar">
+            <div id="progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lesson-sidebar">
+        <h3>Materiais Complementares</h3>
+        <div id="materials-list">
+          <p>Carregando materiais...</p>
+        </div>
+        
+        <h3>Navegação do Curso</h3>
+        <div id="course-navigation">
+          <p>Carregando navegação...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/lesson.js"></script>
+</body>
+</html>
