@@ -1,0 +1,10 @@
+{
+  "/aula-demo/page": "app/aula-demo/page.js",
+  "/cadastro/page": "app/cadastro/page.js",
+  "/dashboard/aluno/page": "app/dashboard/aluno/page.js",
+  "/dashboard/professor/page": "app/dashboard/professor/page.js",
+  "/login/page": "app/login/page.js",
+  "/modulos/page": "app/modulos/page.js",
+  "/page": "app/page.js",
+  "/sobre-curso/page": "app/sobre-curso/page.js"
+}
