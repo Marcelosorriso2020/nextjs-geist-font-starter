@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard do Aluno - FotoMaster</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FotoMaster - Aluno</div>
+      <ul>
+        <li><a href="dashboard-aluno.html" class="active">Dashboard</a></li>
+        <li><a href="curso.html">Meus Cursos</a></li>
+        <li><a href="certificado.html">Certificados</a></li>
+        <li><span id="user-display"></span></li>
+        <li><a href="index.html" id="logout-btn">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Dashboard do Aluno</h1>
+
+    <section id="enrollment-section">
+      <h2>Inscrição no Curso</h2>
+      <div id="course-info">
+        <h3>Domine a Arte da Fotografia</h3>
+        <p>Aprenda técnicas profissionais de fotografia, desde o básico até a pós-produção.</p>
+        <p><strong>Instrutor:</strong> Prof. Marcelo</p>
+        <p><strong>Duração:</strong> 40 horas</p>
+        <p><strong>Total de aulas:</strong> 14</p>
+        <button id="btn-enroll">Inscrever-se Gratuitamente</button>
+      </div>
+    </section>
+
+    <section id="progress-section" style="display: none;">
+      <h2>Meu Progresso</h2>
+      <div id="progress-info">
+        <p>Progresso do curso: <span id="progress-percentage">0%</span></p>
+        <div class="progress-bar">
+          <div id="progress-fill" style="width: 0%;"></div>
+        </div>
+        <p>Aulas concluídas: <span id="completed-lessons">0</span> de <span id="total-lessons">14</span></p>
+      </div>
+    </section>
+
+    <section id="lessons-section" style="display: none;">
+      <h2>Aulas do Curso</h2>
+      <div id="lessons-list"></div>
+    </section>
+
+    <section id="materials-section" style="display: none;">
+      <h2>Materiais Complementares</h2>
+      <div id="materials-list">
+        <ul>
+          <li><a href="#" download>PDF: Guia Completo de Fotografia</a></li>
+          <li><a href="#" download>Presets Lightroom - Pack Iniciante</a></li>
+          <li><a href="#" download>Checklist de Equipamentos</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certificate-section" style="display: none;">
+      <h2>Certificado</h2>
+      <div id="certificate-info">
+        <p>🎉 Parabéns! Você concluiu o curso com sucesso!</p>
+        <a href="certificado.html" class="btn-primary">Baixar Certificado</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/aluno.js"></script>
+</body>
+</html>
