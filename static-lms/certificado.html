@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificado - FotoMaster</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FotoMaster</div>
+      <ul>
+        <li><a href="dashboard-aluno.html">← Voltar ao Dashboard</a></li>
+        <li><span id="user-display"></span></li>
+        <li><a href="index.html" id="logout-btn">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="certificate-container">
+      <div class="certificate-controls">
+        <button id="btn-download" class="btn-primary">📥 Baixar Certificado</button>
+        <button id="btn-print" class="btn-secondary">🖨️ Imprimir</button>
+      </div>
+
+      <div id="certificate" class="certificate">
+        <div class="certificate-header">
+          <div class="logo-section">
+            <div class="logo-circle">📷</div>
+            <div class="logo-text">
+              <h1>FotoMaster</h1>
+              <p>Plataforma de Ensino em Fotografia</p>
+            </div>
+          </div>
+          
+          <div class="certificate-border"></div>
+          
+          <h2>CERTIFICADO DE CONCLUSÃO</h2>
+          
+          <div class="certificate-line"></div>
+        </div>
+
+        <div class="certificate-content">
+          <p class="certificate-text">Certificamos que</p>
+          
+          <div class="student-name">
+            <h3 id="student-name">Nome do Aluno</h3>
+          </div>
+          
+          <p class="certificate-text">concluiu com êxito o curso</p>
+          
+          <div class="course-info">
+            <h4>"Domine a Arte da Fotografia"</h4>
+            <p>Carga horária: 40 horas</p>
+          </div>
+          
+          <p class="certificate-description">
+            demonstrando competência e dedicação no aprendizado das técnicas 
+            profissionais de fotografia, desde conceitos básicos até pós-produção avançada.
+          </p>
+        </div>
+
+        <div class="certificate-footer">
+          <div class="completion-info">
+            <div class="info-item">
+              <p class="info-label">Data de Conclusão</p>
+              <p class="info-value" id="completion-date">01/01/2024</p>
+            </div>
+            
+            <div class="info-item">
+              <p class="info-label">Instrutor</p>
+              <p class="info-value">Prof. Marcelo</p>
+            </div>
+          </div>
+
+          <div class="signature-section">
+            <div class="signature">
+              <div class="signature-line"></div>
+              <p>Assinatura do Instrutor</p>
+            </div>
+            
+            <div class="seal">
+              <div class="seal-circle">
+                <div class="seal-inner">
+                  <span>SELO<br/>OFICIAL</span>
+                </div>
+              </div>
+              <p>Selo da Instituição</p>
+            </div>
+          </div>
+
+          <div class="certificate-id">
+            <p>Certificado ID: <span id="certificate-id">FOTO-000000</span></p>
+            <p>Emitido em: <span id="issue-date">01/01/2024</span></p>
+            <p>Este certificado pode ser verificado em nosso site oficial</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="congratulations">
+        <h3>🎉 Parabéns pela Conquista!</h3>
+        <p>
+          Você concluiu com sucesso o curso FotoMaster e agora possui as habilidades 
+          necessárias para se destacar no mundo da fotografia profissional.
+        </p>
+        <div class="action-buttons">
+          <a href="dashboard-aluno.html" class="btn-primary">Voltar ao Dashboard</a>
+          <a href="index.html" class="btn-secondary">Página Inicial</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/certificado.js"></script>
+</body>
+</html>
